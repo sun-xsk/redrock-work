@@ -1,0 +1,337 @@
+#ssMusic .DHed {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#ssMusic .DHed:after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid red;
+}
+
+.dhang3 > a {
+  display: inline-block;
+  height: 30px;
+  width: 80px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+}
+
+#hotSSdiv {
+  width: 250px;
+  height: 600px;
+  position: absolute;
+  top: 63px;
+  left: 248px;
+  font-size: 15px;
+  display: none;
+  background-color: #fff;
+  overflow-y:scroll;
+}
+
+#hotSSdiv li{
+    color: black;
+    height: 50px; 
+    line-height: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#hotSSdiv li:nth-child(-n+3){
+  font-weight: bold;
+}
+
+/* 播放详情页 */
+#bfdetail{
+  background-color: rgb(196, 236, 252);
+  width:100%;
+  height:705px;
+  position: absolute;
+  top: 0;
+}
+
+.sch2{
+  margin-left: 200px;
+}
+
+.ssk2{
+  display: inline-block;
+  position: relative;
+  width: 190px;
+  height:32px;
+  background-color:#c198986b;
+  top: 10px;
+  border-radius:20px;
+}
+
+.ss2{
+  position: absolute;
+  top:6px;
+  left: 5px;
+}
+
+.parent2{
+  position:relative;
+  left:30px;
+  top: -4px;
+  display: inline-block;
+  width: 160px;
+  height: 32px;
+  border-radius: 0 20px 20px 0;
+}
+
+.sch2 > span {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #c198986b;
+  height: 30px;
+  width: 30px;
+  margin: 4px;
+  text-align: center;
+  line-height: 30px;
+  /* color: rgb(209, 205, 205); */
+  color: #fff;
+  cursor: pointer;
+}
+
+#bigimg{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(189, 181, 181);
+  border-radius: 50%;
+  left: 200px; 
+   top: 150px;
+}
+
+#bigimg2{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+#bigimg3{
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  /* background-color: rgb(248, 186, 128); */
+  border-radius: 50%;
+  left: 25px; 
+   top: 25px;
+}
+
+.donghua{
+  animation: circle1 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+@keyframes circle1{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+#musicword{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  /* background-color:greenyellow; */
+  right: 250px;
+  top: 150px;
+  /* line-height: 40px; */
+  text-align: center;
+  overflow:hidden;
+}
+
+#musicword2{
+  list-style: none;
+  font-size:16px;
+  /* position: absoulte; */
+  margin-top: 50%;
+}
+
+#musicword2 li{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  transition-duration: 600ms;
+}
+
+#musicword2 .lineHigh{
+  font-size:20px;
+  font-weight:bold;
+}
+
+#hezi{
+  position: absolute;
+  top: 50px;
+  right: 250px;
+  width: 500px;
+  height:80px;
+  /* background-color: #f85d5d6b; */
+}
+
+#namename{
+  width: 500px;
+  height:40px;
+  text-align: center;
+  font-size: 35px;
+  line-height:40px;
+}
+
+#playername{
+  width: 500px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px; 
+}
+
+#musicsize{
+  font-size:14px;
+  position:absolute;
+  right: 30px;
+  top:50px;
+}
+
+#musicsize>a{
+  text-decoration: none;
+  margin: 5px;
+  color: black
+  }
+
+#allgds{
+    position:absolute;
+    top: 80px;
+    /* width:100%; */
+    height: 100%;
+    display: flex;
+    justify-content:space-start;
+    flex-wrap: wrap;
+    margin: 0 30px;
+  }
+
+#allgds>span{
+  width: 180px;
+  height: 220px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  position: relative;
+  padding: 15px;
+}
+
+#allgds img{
+  height: 180px;
+  width: 180px;
+}
+
+#allgds .icon-bf {
+  width: 50px;
+  height: 35px;
+  position: absolute;
+  top: 155px;
+  left: 155px;
+  display: none;
+}
+
+#allgds div {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#musicsize .GDed{
+  color:red;
+  background-color:rgba(255, 0, 0, 0.089);
+  border-radius: 5px;
+}
+
+#yuzhong{
+  position:absolute;
+  top: 40px;
+  width:100px;
+  height:35px;
+  margin-left: 30px;
+  background-color:white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#classcontent{
+  position:relative;
+  height:530px;
+  width:700px;
+  background-color:rgb(243, 248, 240);
+  top:75px;
+  left:25px;
+}
+
+.headg{
+  width:100%;
+  height:50px;
+  border-bottom: 1px solid gray;
+}
+
+#all1{
+  display: inline-block;
+  font-size:14px;
+  margin-top:13px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.qwe{
+  display: inline-block;
+  margin-top:13px;
+  margin-left: 15px;
+  font-size:14px;
+  width: 65px;
+  color: rgb(177, 162, 162)
+}
+
+.qwe2{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.qwe2> span {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  font-size:14px;
+}
+
+.backred{
+  background-color:rgba(255, 0, 0, 0.089);
+  color:red;
+}
+
+.hoticon{
+  height:15px;
+  width: 15px;
+}
+

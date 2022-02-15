@@ -1,0 +1,790 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* body {
+  overflow-y: hidden;
+} */
+
+img {
+  cursor: pointer;
+}
+/* 头部 */
+
+
+header {
+  display: inline-block;
+  background-color: #e53935;
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  color: #fff;
+}
+
+.logo {
+  color: #fff;
+  padding-left: 20px;
+}
+
+.ssk{
+  display: inline-block;
+  position: relative;
+  width: 190px;
+  height:32px;
+  /* background:no-repeat url("../html/icon/搜索.png") 5px center; */
+  background-color:#c198986b;
+  top: 16px;
+  border-radius:20px;
+}
+
+.ss{
+  position: absolute;
+  top:6px;
+  left: 5px;
+}
+
+.parent {
+  position:relative;
+  left:30px;
+  top: -4px;
+  display: inline-block;
+  width: 160px;
+  height: 32px;
+  border-radius: 0 20px 20px 0;
+}
+
+.skk{
+  position: absolute;
+  width:160px;
+  height: 32px;
+  background-color:#c1989800;
+  border: none;
+  border-radius: 0 20px 20px 0;
+}
+
+.logoimg {
+  position: relative;
+  top: 5px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+#headimage {
+  border-radius: 50%;
+}
+
+.sch {
+  padding-left: 4%;
+}
+
+.sch > span {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #c198986b;
+  height: 30px;
+  width: 30px;
+  margin: 4px;
+  text-align: center;
+  line-height: 30px;
+  color: rgb(209, 205, 205);
+  cursor: pointer;
+}
+
+.logmai {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.headright {
+  float: right;
+  font-size: 15px;
+}
+
+#sanjiaoxim {
+  width: 20px;
+  height: 15px;
+}
+
+.headright > img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.headright > a {
+  text-decoration: none;
+  position: relative;
+  top: -17px;
+  color: rgb(219, 216, 216);
+}
+.sch {
+  color: rgb(209, 205, 205);
+}
+
+
+/* 导航 */
+.dhang {
+  position: absolute;
+  margin-left: 30px;
+}
+
+
+
+.dhang > a {
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  /* background-color:aqua; */
+}
+
+/* 侧边栏 */
+section {
+  position: relative;
+  display: inline-block;
+  margin-left: 0;
+  border-right: 1px solid gray;
+  height: 640px;
+  width: 180px;
+  line-height: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+section > a {
+  display: block;
+  width: 180px;
+  height: 40px;
+  color: black;
+  text-indent: 2em;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+section > span {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  color: gray;
+  text-indent: 2em;
+}
+
+section > ul > li {
+  display: block;
+  width: 180px;
+  height: 40px;
+  color: black;
+  text-indent: 2em;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 14px;
+  overflow: hidden;
+  cursor: pointer;
+}
+/* 正文 */
+/* 轮播图部分 */
+article {
+  position: absolute;
+  top: 60px;
+  height: 610px;
+  width: 1338px;
+  overflow-y: auto;
+  display: none;
+}
+
+#fxyy {
+  display: inline-block;
+}
+
+.lbt {
+  position: relative;
+  top: 30px;
+  left: 155px;
+  height: 260px;
+  width: 1000px;
+  /* background-color: red; */
+  overflow: hidden;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.lbt img {
+  width: 500px;
+  height: 220px;
+  border-radius: 20px;
+}
+.lbt li {
+  list-style: none;
+  position: absolute;
+  left: 250px;
+  transition-duration: 1s;
+}
+
+#pre {
+  position: absolute;
+  left: 40px;
+  top: 43%;
+  margin-top: -50px;
+  font-size: 75px;
+  color: rgb(167, 163, 163);
+  text-decoration: none;
+  z-index: 101;
+  display: none;
+}
+
+#aft {
+  position: absolute;
+  right: 40px;
+  top: 43%;
+  margin-top: -50px;
+  font-size: 75px;
+  color: rgb(167, 163, 163);
+  text-decoration: none;
+  z-index: 101;
+  display: none;
+}
+
+#btn {
+  /* background-color: aqua; */
+  position: absolute;
+  bottom: 10px;
+  height: 20px;
+  width: 400px;
+  text-align: center;
+  left: 50%;
+  margin-left: -200px;
+}
+
+#button1 {
+  margin-left: 20px;
+  height: 8px;
+  width: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+/* 推荐歌单 */
+.tuijiangd {
+  margin: 0 155px;
+}
+
+.tjflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tjflex > span {
+  width: 180px;
+  height: 220px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  font-size: 14px;
+  position: relative;
+}
+
+.tjflex img {
+  height: 180px;
+  width: 180px;
+}
+
+.tjflex .icon-bf {
+  width: 40px;
+  height: 25px;
+  position: absolute;
+  top: 145px;
+  left: 150px;
+  display: none;
+}
+
+.tjflex div {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* 热门播客 */
+.rmflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rmflex > span {
+  width: 490px;
+  height: 100px;
+  background-color: skyblue;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* 独家放送 */
+.djflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.djflex > span {
+  width: 330px;
+  height: 250px;
+  background-color: skyblue;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+/* 最新音乐 */
+.zxflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.zxflex > span {
+  width: 330px;
+  height: 80px;
+  background-color: skyblue;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* 推荐MV */
+.mvflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mvflex > span {
+  width: 235px;
+  height: 120px;
+  background-color: skyblue;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* 听听 */
+.ttflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ttflex > span {
+  width: 180px;
+  height: 220px;
+  background-color: skyblue;
+  border-radius: 5px;
+}
+
+/* 看看 */
+.kkflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.kkflex > span {
+  width: 180px;
+  height: 220px;
+  background-color: skyblue;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  position: relative;
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid gray;
+  bottom: 0px;
+  justify-content: space-between;
+}
+
+.bottomimg {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 45px;
+  height: 45px;
+}
+
+.bottomimg2{
+  position: absolute;
+  background-color:rgba(216, 212, 212, 0.623);
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  left:5px;
+  top:10px;
+  pointer-events: none;
+}
+
+.bottomimg3{
+  position:relative; 
+  bottom:-11px;
+  right:-5px;
+}
+
+
+#musicimage {
+  height: 20px;
+}
+
+#musicimage2 {
+  height: 20px;
+}
+
+#localxz {
+  height: 20px;
+}
+
+.gs {
+  display: inline-block;
+}
+
+.gm {
+  display: inline-block;
+  font-size: 20px;
+  /* width: 200px; */
+  max-width: 200px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+#ccgs{
+  position:relative;
+  top:-3px;
+}
+.bofang {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  /* background-color:skyblue; */
+  font-size: 18px;
+  width: 420px;
+}
+
+.bofang img {
+  width: 20px;
+  height: 20px;
+  margin: 0 20px;
+}
+
+#zt img {
+  width: 30px;
+}
+
+.jdt {
+  height: 3px;
+  margin-bottom: 2px;
+  background-color: gray;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.jdt2 {
+  height: 3px;
+  width: 0;
+  background-color: rgb(250, 86, 86);
+  display: block;
+  cursor: pointer;
+}
+
+.ball2 {
+  position: absolute;
+  top:-3px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+  display:none;
+  pointer-events: none;
+}
+
+.bottomright img {
+  width: 26px;
+  margin: 15px 10px;
+}
+
+.box {
+  height: 105px;
+  width: 30px;
+  background-color: rgb(214, 210, 210);
+  position: absolute;
+  right: 60px;
+  top: -90px;
+  border-radius: 16px;
+  display: none;
+  z-index: 100;
+}
+
+.bar {
+  margin: 10px auto;
+  height: 80px;
+  width: 5px;
+  background-color: red;
+  cursor: pointer;
+  position: relative;
+}
+
+.barmove {
+  background-color: rgb(155, 145, 145);
+  margin: 10px auto;
+  width: 5px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.ball {
+  position: absolute;
+  top: 60px;
+  margin-left: -4px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+#GD > div > span {
+  border: 1px solid gray;
+  border-radius: 20px;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#GDIMG {
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#icon-qkgd {
+  width: 50px;
+  height: 18px;
+}
+
+#GD-xxk {
+  width: 1000px;
+  height: 200px;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  position: absolute;
+}
+
+#GD > div > #firstBTN {
+  border: none;
+  width: 100px;
+  height: 31px;
+  line-height: 31px;
+  /* border-right:; */
+  border-radius: 20px 0 0 20px;
+  background-color: red;
+  position: relative;
+  top: 5px;
+}
+
+#firstBTN img {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  top: 3px;
+}
+
+#GD > div > #secondBTN {
+  border: none;
+  width: 30px;
+  position: relative;
+  right: 10px;
+  top: 7px;
+  border-left: 0;
+  border-radius: 0 20px 20px 0;
+  font-size: 35px;
+  background-color: red;
+}
+
+.dhang2 {
+  margin-top: 35px;
+}
+
+.dhang2 > a {
+  display: inline-block;
+  height: 30px;
+  width: 80px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+}
+
+#ALLmusic thead {
+  font-size: 15px;
+  color: gray;
+}
+
+#ALLmusic tbody {
+  font-size: 13px;
+  color: gray;
+}
+
+#ALLmusic tbody tr td {
+  height: 30px;
+  line-height: 20px;
+}
+
+#ALLmusic tbody tr:nth-child(2n + 1) {
+  background-color: rgba(228, 224, 224, 0.308);
+}
+
+#GD-Talk {
+  display: none;
+}
+
+#GD-Lover {
+  display: none;
+}
+
+#GD .DHed {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#GD .DHed:after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid red;
+}
+
+.dhang > a {
+  display: inline-block;
+  height: 30px;
+  width: 80px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.dhang .DHed {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.dhang .DHed:after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid red;
+}
+
+#My-Talk {
+  width: 80%;
+  height: 60px;
+  border-radius: 4px;
+  position: relative;
+  left: 50%;
+  margin-left: -40%;
+  resize: none;
+  font-size: 16px;
+  border: 1px solid #bdb2b26b;
+}
+
+#Send-Talk {
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  display: block;
+  margin-left: 91%;
+  border: 1px solid #8d8a8a6b;
+  background-color:#fff;
+  cursor: pointer;
+}
+
+
+#Hot-Talk {
+  height: 20px;
+  width: 98%;
+}
+
+.Hot-Talk {
+  width: 90%;
+  height: 40px;
+  position: relative;
+  left: 50%;
+  margin-left: -45%;
+  border: none;
+}
+
+#Hot-Talk li {
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #bdb2b26b;
+  text-decoration: none;
+  font-size:12px;
+  height: 60px;
+  width: 100%;
+  line-height: 20px;
+  list-style-type:none;
+  margin-bottom: 10px;
+}
+#Hot-Talk li img{
+  width: 40px;
+  height: 40px;
+  border-radius:50%;
+}
+
+#Hot-Talk li div{
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+  width:95%;
+}
+
+#Hot-Talk li div img{
+  width:15px;
+  height:15px;
+  margin:10px;
+  float: right;
+}
+
+.skyblue{
+  color:skyblue;
+}
+
+#ssMusic{
+  overflow-x: hidden;
+}
+
+#desc{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

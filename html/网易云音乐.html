@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="../css/网易云音乐.css">
+    <link rel="stylesheet" href="../css/搜索歌曲.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <span class="logo">
+            <img src="icon/logo.jpeg" alt="logo" class="logoimg" /> 网易云音乐
+        </span>
+        <span class="sch">
+            <span>
+                < </span>
+                    <span>></span>
+                    <div class="ssk">
+                        <img src="./icon/搜索.png" alt="logo" class="ss" id="ss">
+                        <span class="parent">
+                            <input type="text" class="skk" placeholder id="findMusic" value>
+                        </span>
+                    </div>
+
+                    <span><img src="icon/麦克风.png" alt="logo" class="logmai"></span>
+            </span>
+            <div class="headright">
+                <img src="icon/chazhaoyonghu.png" id="headimage">
+                <a href="登录界面.html" id="dlstatus">未登录<img src="icon/三角形.png" id="sanjiaoxim"></a>
+                <a href="#">超级VIP</a>
+                <img src="icon/yifu.png">
+                <img src="icon/shezhi.png">
+                <img src="icon/xinfeng.png">
+                <img src="icon/小窗.png">
+                <img src="icon/24gl-minimization.png">
+                <img src="icon/MINIMIZE.png">
+                <img src="icon/chacha.png">
+            </div>
+
+
+    </header>
+
+    <!-- 侧边栏 -->
+    <section>
+        <a href="#">发现音乐</a>
+        <a href="#">播客</a>
+        <a href="#">视频</a>
+        <a href="#">朋友</a>
+        <a href="#">直播</a>
+        <a href="#">私人FM</a>
+        <span>我的歌单</span>
+        <a href="#" style="display:none">本地下载与播放</a>
+        <a href="#" style="display:none">最近播放</a>
+        <a href="#" style="font-size:14px">我喜欢的音乐</a>
+        <a href="#" style="display:none">我的播客</a>
+        <a href="#" style="display:none">我的收藏</a>
+        <a href="#" style="display:none">最近播放</a>
+        <ul id="myMusciGd">
+        </ul>
+    </section>
+
+    <!-- 正文 -->
+    <article id="fxyy">
+        <nav class="dhang">
+            <a href="#" class="DHed">个性推荐</a>
+            <a href="#">专属定制</a>
+            <a href="#" id ="move1">歌单</a>
+            <a href="#">排行榜</a>
+            <a href="#">歌手</a>
+            <a href="#">最新音乐</a>
+        </nav>
+        <!-- 轮播图 -->
+        <div class="lbt">
+            <li id="i1"><img src="images/p1.jpg" /></li>
+            <li id="i2"><img src="images/p2.jpg" /></li>
+            <li id="i3"><img src="images/p3.jpg" /></li>
+            <li id="i4"><img src="images/p4.jpg" /></li>
+            <li id="i5"><img src="images/p5.jpg" /></li>
+            <li id="i6"><img src="images/p6.jpg" /></li>
+            <li id="i7"><img src="images/p7.jpg" /></li>
+            <li id="i8"><img src="images/p8.jpg" /></li>
+            </ul>
+            <a id="pre" href="#">
+                < </a>
+                    <a id="aft" href="#">></a>
+                    <div id="btn"></div>
+        </div>
+        <!-- 推荐歌单 -->
+        <div class="tuijiangd">
+
+            <h1>推荐歌单 ></h1>
+            <div class="tjflex">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h1>热门播客 ></h1>
+            <div class="rmflex">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h1>独家放送 ></h1>
+            <div class="djflex">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </div>
+
+            <h1>最新音乐 ></h1>
+            <div class="zxflex">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h1>推荐MV ></h1>
+            <div class="mvflex">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h1>听听 ></h1>
+            <div class="ttflex">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h1>看看 ></h1>
+            <div class="kkflex">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </article>
+    <article id="bk"></article>
+    <article id="sp"></article>
+    <article id="py"></article>
+    <article id="zhibo"></article>
+    <article id="siren"></article>
+    <article id="bendi"></article>
+    <article id="zuijin"></article>
+    <article id="likeGD"></article>
+    <article id="wdbk"></article>
+    <article id="wdsc"></article>
+    <article id="zjbf"></article>
+
+    <!-- 歌单歌曲 -->
+    <article id="GD" style="overflow-x: hidden;">
+        <img src="" id="GDIMG">
+        <div id="GD-xxk">
+            <img src="icon/曲库歌单.png" id="icon-qkgd">
+            <div style="display: inline-block" id="GDbt"></div><br>
+            <img src="images/a11.jpg" height="25px" width="25px" style="border-radius: 50%;" id="GDnameimg">
+            <div id="GDname" style=" font-size: 15px;display: inline-block"></div><br />
+            <span id="firstBTN"><img src="icon/播放-白.png">播放全部</span>
+            <span id="secondBTN">+</span>
+            <span>收藏</span>
+            <span>分享</span>
+            <span>下载全部</span><br />
+            <div id="desc" style="font-size:15px;line-height:25px;margin-top: 15px;"></div>
+        </div>
+        <div>
+            <nav class="dhang2">
+                <a href="#" class="DHed" style="margin-left:30px;">歌曲列表</a>
+                <a href="#" class="DH">评论</a>
+                <a href="#" class="DH">收藏者</a>
+            </nav>
+        </div>
+        <div id="ALLmusic">
+            <table width="1338px" cellspacing="0">
+                <thead>
+                    <tr>
+                        <td width="5%"></td>
+                        <td width="5%">操作</td>
+                        <td width="30%">歌名</td>
+                        <td width="20%">歌手</td>
+                        <td width="20%">专辑</td>
+                        <td width="20%">时间</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+        <div id="GD-Talk">
+            <textarea id="My-Talk" cols="30" rows="4"></textarea>
+            <button id="Send-Talk" value="xx">评论</button>
+            <div class="Hot-Talk">
+                <h4>精彩评论</h4>
+                <ul id="Hot-Talk">
+                </ul>
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <div id="GD-Lover"></div>
+    </article>
+
+    <!-- 搜索歌曲 -->
+    <article id="ssMusic">
+        <div>
+            <nav class="dhang3">
+                <a href="#" class="DHed" style="margin-left:30px;">单曲</a>
+                <a href="#" class="DH">歌手</a>
+                <a href="#" class="DH">专辑</a>
+                <a href="#" class="DH">视频</a>
+                <a href="#" class="DH">歌单</a>
+                <a href="#" class="DH">歌词</a>
+                <a href="#" class="DH">播客</a>
+            </nav>
+        </div>
+        <div id="ALLmusic2">
+            <table width="1338px" cellspacing="0">
+                <thead>
+                    <tr>
+                        <td width="5%"></td>
+                        <td width="5%">操作</td>
+                        <td width="30%">歌名</td>
+                        <td width="20%">歌手</td>
+                        <td width="20%">专辑</td>
+                        <td width="20%">时间</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </article>
+
+    <!-- 歌单大全 -->
+    <article id="allgd">
+        <nav class="dhang">
+            <a href="#" id ="move2">个性推荐</a>
+            <a href="#">专属定制</a>
+            <a href="#" class="DHed">歌单</a>
+            <a href="#">排行榜</a>
+            <a href="#">歌手</a>
+            <a href="#">最新音乐</a>
+        </nav>
+        <button id="yuzhong">华语 ></button>
+        <nav id="musicsize">
+            <a href="#"  id="GDed">华语</a>
+            <a href="#">流行</a>
+            <a href="#">摇滚</a>
+            <a href="#">民谣</a>
+            <a href="#">电子</a>
+            <a href="#">另类</a>
+            <a href="#">轻音乐</a>
+            <a href="#">综艺</a>
+            <a href="#">影视原声</a>
+            <a href="#">ACG</a>
+        </nav>
+
+        <div id="allgds">
+            
+        </div>
+        <div id="classcontent" style="display: none">
+            <div class="headg" id="qwe2"> <span id="all1">全部</span></div>
+            <div><span class="qwe">语种</span><div class="qwe2" id="qwe2"></div>   </div>
+            <div><span class="qwe">风格</span><div class="qwe2" id="qwe2"></div>      </div>
+            <div><span class="qwe">场景</span><div class="qwe2" id="qwe2"></div>      </div>
+            <div><span class="qwe">情感</span><div class="qwe2" id="qwe2"></div>      </div>
+            <div><span class="qwe">主题</span><div class="qwe2" id="qwe2"></div>      </div>
+            
+        </div>
+    </article>
+
+    <!-- 尾部 -->
+    <footer>
+        <div style="width:300px;">
+            <img src="images/a10.jpg" class="bottomimg" id="aaimg" title="展开音乐详情页">
+            <div class="bottomimg2" style="display:none"><img src="./icon/上.png" class="bottomimg3"></div>
+            <div class="gs">
+                <span class="gm" id="bbgm">青花瓷
+                </span>
+                <img src="icon/xihuan.png" id="musicimage" title="喜欢">
+                <br />
+                <span style="font-size:13px" id="ccgs">
+                    周杰伦
+                </span>
+            </div>
+        </div>
+
+        <div>
+            <div class="bofang">
+                <img src="icon/列表循环.png" style="width: 16px;" id="xunhuan">
+                <img src="icon/上一首.png" id="sys">
+                <span id="zt"><img src="icon/播放.png" id=boFang></span>
+                <img src="icon/下一首.png" style="margin-right:40px" id="xys">
+                <span style="cursor:pointer" id="ci">词</span>
+            </div>
+            <div style="font-size:8px">
+                <span id="startT">00:00</span>
+                <div class="jdt" style="width:350px">
+                    <span class="jdt2"></span>
+                    <div class="ball2"></div>
+                </div>
+                <span id="endT">00:00</span>
+            </div>
+        </div>
+
+        <div class="bottomright">
+            <img src="icon/无损音质.png">
+            <img src="icon/yinxiao.png">
+            <img src="icon/laba.png" id="yinLiang">
+            <img src="icon/duoren.png">
+        </div>
+        <div class="box">
+            <div class="bar">
+                <div class="barmove " style="height:60px"></div>
+                <div class="ball"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!--热搜列表框  -->
+    <div id="hotSSdiv">
+        <ol></ol>
+    </div>
+
+
+    <!-- 播放详情页 -->
+    <div id="bfdetail" style="display:none">
+        <span class="sch2">
+            <span>
+                < </span>
+                    <span>></span>
+                    <div class="ssk2">
+                        <img src="./icon/搜索.png" alt="logo" class="ss2">
+                        <span class="parent2">
+                        </span>
+                    </div>
+                    <span><img src="icon/麦克风.png" alt="logo" class="logmai"></span>
+            </span>
+            <div id="bigimg">
+                <img src="icon/碟片.jpg" id="bigimg2">
+                <img src="./images/a6.jpg" id="bigimg3">
+            </div>
+            <div id="musicword">
+                    <ul id="musicword2">
+
+                    </ul>
+            </div>
+            <div id="hezi">
+                <div id="namename">青花瓷</div>
+                <div id="playername">周杰伦</div>    
+            </div>
+
+    </div>
+
+</body>
+<script type="text/javascript" src="../js/网易云音乐.js"></script>
+
+</html>

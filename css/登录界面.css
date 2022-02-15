@@ -1,0 +1,97 @@
+#jiemian {
+  position: relative;
+  left: 50%;
+  margin-left: -260px;
+  height: 520px;
+  width: 350px;
+  border: 3px solid red;
+}
+#wyy {
+  width: 150px;
+  position: relative;
+  top: 20px;
+  left: 50%;
+  margin-left: -75px;
+}
+#input {
+  position: relative;
+  top: 50px;
+}
+
+#zh {
+  width: 266px;
+  height: 30px;
+  margin: 0 40px;
+}
+#select {
+  position: absolute;
+  width: 80px;
+  height: 33px;
+  border: 1px solid gray;
+  border-right: 0;
+  font-size: 12px;
+  justify-content: center;
+  line-height: 30px;
+  border-bottom: 0;
+}
+#select img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 6px;
+}
+#name {
+  width: 180px;
+  height: 30px;
+  float: right;
+  border: none;
+  border: 1px solid gray;
+  outline: none;
+  border-bottom: 0;
+}
+
+#password {
+  width: 258px;
+  height: 30px;
+  margin: 0 40px;
+}
+#zDong{
+    display: inline-block;
+    margin-top:10px;
+    margin-left: 40px;
+    font-size: 14px;
+}
+#dengLu{
+    width: 258px;
+    height: 40px;
+    margin: 10px 40px;
+    border: none;
+    color:white;
+    background-color:#f54750;
+}
+#dengLu:hover{
+    background-color: rgb(218, 16, 16);
+}
+#zhuce{
+    color:black;
+    margin-left: 155px;
+}
+#img{
+    display: flex;
+    margin:20px 30px;
+    justify-content:space-between;
+}
+#img>img{
+    width:40px;
+}
+a{
+    text-decoration:none;
+}
+#zce{
+    color:gray;
+    font-size:12px;
+    margin-left: 30px;
+}
+#zce a{
+    color:skyblue;
+}
