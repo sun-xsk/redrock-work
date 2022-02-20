@@ -1654,3 +1654,12 @@ btn.addEventListener('click', function () {
 if (cookies) {
     getUsermc();
 }
+
+const goBack = document.querySelector('#goBack');
+const goNext = document.querySelector('#goNext');
+goBack.addEventListener('click', function () {
+    history.back();
+})
+goNext.addEventListener('click', function () {
+    history.forward();
+})
