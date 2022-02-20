@@ -59,6 +59,7 @@ header {
   height: 32px;
   background-color:#c1989800;
   border: none;
+  outline: none;
   border-radius: 0 20px 20px 0;
 }
 

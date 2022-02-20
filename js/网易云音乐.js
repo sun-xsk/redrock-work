@@ -304,13 +304,29 @@ const headimage = document.getElementById("headimage");
 const dlstatus = document.getElementById("dlstatus");
 const token = localStorage.getItem("token");
 const personZH = JSON.parse(token);
-const cookies = personZH.cookie;
+const cookies = personZH?personZH.cookie:null;
+const out =document.querySelector('#zDong');
+out.addEventListener('click', function(){
+    localStorage.clear();
+    alert('你已经退出登录');
+    window.location.reload();
+})
 // console.log(personZH);
 // console.log(cookies);
 if (avatarUrl) {
     headimage.setAttribute('src', avatarUrl);
     dlstatus.innerText = nickname;
 }
+const jiemian = document.querySelector('#jiemian');
+
+dlstatus.addEventListener('click', function (){
+    if (jiemian.style.display == 'block') {
+        jiemian.style.display="none";
+    }else{
+        jiemian.style.display="block"
+    }
+
+})
 
 // 歌单封面+歌单信息+歌曲
 const tjgdimg = document.querySelectorAll(".tjflex span")
@@ -970,7 +986,7 @@ findMusics.addEventListener('click', function () {
 })
 
 // 我喜欢的歌曲列表
-const myID = personZH.profile.userId
+const myID = personZH?personZH.profile.userId:null;
 sections[8].addEventListener('click', () => {
     fetch(`http://redrock.udday.cn:2022/likelist?uid=${myID}&cookie=${cookies}`, {
         method: 'GET',
@@ -1023,13 +1039,13 @@ sections[8].addEventListener('click', () => {
 
 // 获取用户歌单
 const myMusciGd = document.querySelector('#myMusciGd');
-fetch(`http://redrock.udday.cn:2022/user/playlist?uid=${myID}&cookie=${cookies}`, {
+function getUsermc() {
+    fetch(`http://redrock.udday.cn:2022/user/playlist?uid=${myID}&cookie=${cookies}`, {
     method: 'GET',
 }).then(res => res.text())
     .then((res) => JSON.parse(res))
     .then((res) => {
         let x = res.playlist;
-        // console.log(x)
         for (let i = 0; i < x.length; i++) {
             let li = document.createElement('li')
             myMusciGd.appendChild(li);
@@ -1090,6 +1106,7 @@ fetch(`http://redrock.udday.cn:2022/user/playlist?uid=${myID}&cookie=${cookies}`
             })
         }
     })
+}
 
 // 获取音乐url
 function geturl(ids) {
@@ -1606,4 +1623,34 @@ function dd(cat) {
             }
 
         })
+}
+
+let chacha = document.querySelector("#del");
+let zh = document.querySelector("#name")
+let mm = document.querySelector("#password")
+let btn = document.querySelector("#dengLu")
+function a() {
+    fetch(`http://redrock.udday.cn:2022/login/cellphone?phone=${zh.value}&password=${mm.value}`, {
+        method: 'POST',
+    }).then((response) => {
+        return response.json()
+    }).then((response) => {
+        if (response.code === 200) {
+            alert("登录成功")
+            localStorage.setItem('token', JSON.stringify(response))
+            localStorage.setItem('avatarUrl', response.profile.avatarUrl);
+            localStorage.setItem('nickname',response.profile.nickname);
+            window.location.reload();
+        } else {
+            alert("账户信息有误")
+        }
+    })
+};
+
+btn.addEventListener('click', function () {
+    a();
+})
+
+if (cookies) {
+    getUsermc();
 }

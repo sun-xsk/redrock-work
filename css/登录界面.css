@@ -1,6 +1,9 @@
 #jiemian {
-  position: relative;
-  left: 50%;
+  position: absolute;
+  background-color: white;
+  top: 60px;
+  z-index: 101;
+  left: 75%;
   margin-left: -260px;
   height: 520px;
   width: 350px;
@@ -41,9 +44,10 @@
   top: 6px;
 }
 #name {
+  position:absolute;
+  left: 120px;
   width: 180px;
-  height: 30px;
-  float: right;
+  height: 29px;
   border: none;
   border: 1px solid gray;
   outline: none;
@@ -54,12 +58,18 @@
   width: 258px;
   height: 30px;
   margin: 0 40px;
+  outline: none;
 }
 #zDong{
     display: inline-block;
     margin-top:10px;
     margin-left: 40px;
     font-size: 14px;
+    cursor: pointer;
+}
+
+#zDong:hover{
+  color: red;
 }
 #dengLu{
     width: 258px;
